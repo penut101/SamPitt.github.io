@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Alpha Mu Pitt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <div class="pulsing-circle"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="ripple"></div>
+    <div class="container">
+        <header>
+            <img src="images/Picture.jpg" alt="Sigma Alpha Mu Pitt" class="profile-image">
+            <h1><span id="typed-name"></span></h1>
+            <h1><span id="typed-title"></span></h1>
+            <div id="location-container">
+                <img src="images/location.svg" alt="Location Icon" class="location-icon">
+                <p id="location">University of Pittsburgh</p>
+            </div>
+            <div class="social-buttons">
+                <a href="" class="button" target="_blank">
+                    <img src="images\facebookIcon.svg" alt="Facebook Icon" class="icon">
+                    Facebook
+                </a>
+                <a href="https://www.linkedin.com/in/aiden-nemeroff-b8a1342b1/" class="button" target="_blank">
+                    <img src="images\instagramIcon.svg" alt="Instagram Icon" class="icon">
+                    Instagram
+                </a>
+                <a href="mailto: " class="button" target="_blank"> <!--Fill in email-->
+                    <img src="images/emailIcon.svg" alt="Email Icon" class="icon">
+                    Email
+                </a>
+                <a href="" class="button" target="_blank"> <!--Fill in email-->
+                    <img src="images/donationsIcon.svg" alt="Donations Icon" class="icon">
+                    Donations
+                </a>
+            </div>
+        </header>
+        <section id="about">
+            <h1>About Us</h2>
+                <p>Hello, I am Aiden Nemeroff, and I am currently a sophomore at the University of Pittsburgh studying
+                    Computer Science with a minor in Information Science. I have a strong passion for technology and
+                    problem-solving,
+                    with proficiency in Java and a keen ability to communicate and collaborate effectively with others.
+                </p>
+        </section>
+        <div style="height: 325px;"></div>
+        </section>
+        <footer>
+            <div class="footer-icons">
+                <a href="" target="_blank">
+                    <img src="" alt="GitHub Icon" class="footer-icon">
+                </a>
+                <a href="" target="_blank">
+                    <img src="" alt="Instagram Icon" class="footer-icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var typed = new Typed('#typed-name', {
+            strings: ["Sigma Alpha Mu"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: false,
+            showCursor: false
+        });
+        var typed = new Typed('#typed-title', {
+            strings: ["Psi Chapter"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            startDelay: 1050,
+            loop: false,
+            onComplete: function (self) {
+                self.cursor.remove();
+            }
+        });
+    </script>
+</body>
+
+</html>
