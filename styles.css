@@ -84,7 +84,7 @@ header h1 {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #393BB2;
+  background-color: #5d39b2;
   color: #fff;
   border-radius: 20px;
   text-decoration: none;
@@ -480,4 +480,16 @@ tag {
   box-shadow: 0 0 5px 5px rgba(82, 117, 214, 0.5);
   border-radius: 50%;
   background-image: var(--img-url), linear-gradient(to bottom right, #ff3cac, #7d4d99, #2b86c5);
+}
+
+.brothers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resized-composite {
+  width: 85%;
+  height: auto;
+  max-width: 85%;
 }
