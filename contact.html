@@ -4,23 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigma Alpha Mu Pitt</title>
+    <title>Contact - Sigma Alpha Mu Pitt</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
 <body>
-    <div class="pulsing-circle"></div>
-    <div class="ripple"></div>
-    <div class="ripple"></div>
-    <div class="ripple"></div>
     <div class="container">
+        <!-- Include the common header -->
         <header>
             <a href="index.html">
                 <img src="images/Picture.jpg" alt="Sigma Alpha Mu Pitt" class="profile-image">
@@ -53,6 +44,8 @@
                                         class="icon">Instagram</a></li>
                             <li><a href="mailto:" target="_blank"><img src="images/emailIcon.svg" alt="Email Icon"
                                         class="icon">Email</a></li>
+                            <li><a href="" target="_blank"><img src="images/twitterIcon.svg" alt="Twitter Icon"
+                                        class="icon">Twitter</a></li>
                             <li><a href="" target="_blank"><img src="images/linkedinIcon.svg" alt="LinkedIn Icon"
                                         class="icon">LinkedIn</a></li>
                         </ul>
@@ -87,29 +80,17 @@
                 </ul>
             </nav>
         </header>
-        <section id="about">
-            <h1>About Us</h1>
-            <p>Hello! We are Sigma Alpha Mu, the Psi Chapter at the University of Pittsburgh. We are a social fraternity
-                that was founded in 1909. We are a group of diverse individuals who come together to form a brotherhood
-                that lasts a lifetime. We are dedicated to our philanthropy, the Alzheimer's Association, and we are
-                always looking for ways to give back to the community.</p>
+        <section id="contact">
+            <h1>Contact</h1>
+            <section id="form">
+                <h2>Contact Form</h2>
+                <p>...</p>
+            </section>
+            <section id="location">
+                <h2>Our Location</h2>
+                <p>...</p>
+            </section>
         </section>
-        <section id="events">
-            <h1>Upcoming Events</h1>
-            <div class="event-card">
-                <img src="images/event1.jpg" alt="Event 1" class="event-image">
-                <div class="event-info"></div>
-        </section>
-        <section id="brothers">
-            <h1>Our Brothers</h1>
-            <div class="brothers-container">
-                <img src="images/composite24.png" alt="Composite Image" class="composite-image resized-composite">
-            </div>
-        </section>
-        <section id="alumni">
-            <h1>Alumni News</h1>
-        </section>
-        <div style="height: 325px;"></div>
         <!-- Include the common footer -->
         <footer>
             <div class="footer-icons">
@@ -148,21 +129,6 @@
             onComplete: function (self) {
                 self.cursor.remove();
             }
-        });
-
-        // Dropdown menu
-        document.addEventListener('DOMContentLoaded', function () {
-            const navItems = document.querySelectorAll('.nav-item');
-
-            navItems.forEach(item => {
-                item.addEventListener('mouseover', function () {
-                    this.querySelector('.dropdown').style.display = 'block';
-                });
-
-                item.addEventListener('mouseout', function () {
-                    this.querySelector('.dropdown').style.display = 'none';
-                });
-            });
         });
     </script>
 </body>
