@@ -562,3 +562,14 @@ tag {
 .nav-item:hover .dropdown {
   display: block;
 }
+
+.event-image {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.event-image.enlarged {
+  transform: scale(2);
+  z-index: 1000;
+  position: relative;
+}
