@@ -573,3 +573,51 @@ tag {
   z-index: 1000;
   position: relative;
 }
+
+.event-image.enlarged {
+  transform: scale(2);
+  z-index: 1000;
+  position: relative;
+}
+
+.brother-container {
+  position: relative;
+  display: inline-block;
+}
+
+.brother-image {
+  width: 100%;
+  height: auto;
+}
+
+.relative-container {
+  position: relative;
+}
+
+.clickable-box {
+  position: absolute;
+  width: 57px;
+  height: 75px;
+  background-color: transparent;
+  /* Make the background transparent */
+  border: none;
+  /* Remove the border */
+  cursor: pointer;
+  z-index: 2;
+  /* Ensure the boxes are above the image */
+}
+
+.bio {
+  display: none;
+  position: absolute;
+  top: -100px;
+  /* Adjust as needed to position above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  /* Ensure the bio pop-up is above the boxes */
+}
