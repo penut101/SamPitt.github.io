@@ -304,6 +304,26 @@
                 function toggleEnlarge(img) {
                     img.classList.toggle('enlarged');
                 }
+
+                //Typed.js 
+                var typed = new Typed('#typed-name', {
+                    strings: ["Sigma Alpha Mu"],
+                    typeSpeed: 50,
+                    backSpeed: 25,
+                    loop: false,
+                    showCursor: false
+                });
+                var typed = new Typed('#typed-title', {
+                    strings: ["Psi Chapter"],
+                    typeSpeed: 50,
+                    backSpeed: 25,
+                    startDelay: 1050,
+                    loop: false,
+                    onComplete: function (self) {
+                        self.cursor.remove();
+                    }
+                });
+
             </script>
 </body>
 
