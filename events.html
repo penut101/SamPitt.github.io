@@ -88,7 +88,21 @@
             </section>
             <section id="past">
                 <h2>Past Events</h2>
-                <p>...</p>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/Spring 25.JPEG" alt="Spring 25" class="event-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Fall24.jpg" alt="Fall 24" class="event-image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Event3.JPEG" alt="Event 3" class="event-image">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
+                </div>
             </section>
         </section>
         <!-- Include the common footer -->
@@ -130,6 +144,25 @@
                 self.cursor.remove();
             }
         });
+         // Carousel functionality
+         let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
     </script>
 </body>
 
