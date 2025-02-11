@@ -621,3 +621,38 @@ tag {
   z-index: 3;
   /* Ensure the bio pop-up is above the boxes */
 }
+
+/* Email JS */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#contact-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#contact-form button:hover {
+  background-color: #0056b3;
+}

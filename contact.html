@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sigma Alpha Mu Pitt</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- TypedJS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--EmailJS-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("CNHh5KZ4bbNil_Ano"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
+        })();
+    </script>
 </head>
 
 <body>
@@ -84,7 +92,16 @@
             <h1>Contact</h1>
             <section id="form">
                 <h2>Contact Form</h2>
-                <p>...</p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+
             </section>
             <section id="location">
                 <h2>Our Location</h2>
@@ -129,6 +146,16 @@
             onComplete: function (self) {
                 self.cursor.remove();
             }
+        });
+        // EmailJS form submission
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            emailjs.sendForm('service_abngs3n', 'template_zab3a8b', this)
+                .then(function () {
+                    alert('Message sent successfully!');
+                }, function (error) {
+                    alert('Failed to send message. Please try again later.');
+                });
         });
     </script>
 </body>
