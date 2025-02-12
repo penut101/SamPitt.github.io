@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sigma Alpha Mu Pitt</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <!-- TypedJS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!--EmailJS-->
@@ -15,6 +17,8 @@
             emailjs.init("CNHh5KZ4bbNil_Ano"); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
         })();
     </script>
+    <!-- Google Maps JavaScript API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANrGgx6e4gI0s6ijFb6xI0gfNpnfuaFpU"></script>
 </head>
 
 <body>
@@ -105,7 +109,7 @@
             </section>
             <section id="location">
                 <h2>Our Location</h2>
-                <p>...</p>
+                <div id="map" style="height: 400px; width: 100%;"></div>
             </section>
         </section>
         <!-- Include the common footer -->
@@ -157,6 +161,21 @@
                     alert('Failed to send message. Please try again later.');
                 });
         });
+        // Google Maps initialization
+        function initMap() {
+            var location = { lat: 40.445484, lng: -79.959222 }; // Replace with your actual location coordinates
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        // Load the map after the page has loaded
+        window.onload = initMap;
     </script>
 </body>
 
