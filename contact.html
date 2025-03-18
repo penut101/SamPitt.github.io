@@ -109,8 +109,11 @@
 
             </section>
             <section id="location">
-                <h1>Our Location</h1>
-                <div id="map" style="height: 400px; width: 100%;"></div>
+                <h1>Our Location</h2>
+                <p>Sigma Alpha Mu</p>
+                <p>3790 Utterback Dr, Pittsburgh, PA 15213</p>
+                <img src="images/Outside.jpg" alt="Sigma Alpha Mu Pitt" class="location-image"
+                    style="width: 70%; height: auto;">
             </section>
         </section>
         <!-- Include the common footer -->
@@ -162,21 +165,6 @@
                     alert('Failed to send message. Please try again later.');
                 });
         });
-        // Google Maps initialization
-        function initMap() {
-            var location = { lat: 40.445484, lng: -79.959222 }; // Replace with your actual location coordinates
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-
-        // Load the map after the page has loaded
-        window.onload = initMap;
     </script>
 </body>
 
