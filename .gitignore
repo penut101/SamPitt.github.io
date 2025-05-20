@@ -1,0 +1,20 @@
+# Ignore node_modules
+node_modules/
+fonts/
+images/
+
+# Ignore font files
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+
+# Ignore image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.bmp
+*.webp
